@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+  <header>
+    <div id="container">
+      Anime is 
+      <div id="flip">
+        <div><div>Fun</div></div>
+        <div><div>Silly</div></div>
+        <div><div>Cool</div></div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section>
+      <h2 id="hei">About Us</h2>
+      <script>
+  var originalText = document.getElementById('hei').innerHTML;
+  document.getElementById('hei').addEventListener('click', function() {
+    this.innerHTML = "Henshin";
+    setTimeout(function() {
+      document.getElementById('hei').innerHTML = originalText;
+    }, 1000); // you can adjust the time here
+  });
+</script>
+      <p class="about">Welcome to Anime World, the ultimate destination for anime enthusiasts. Whether you are a seasoned fan or just starting your journey, our site offers comprehensive reviews, top recommendations, and detailed analyses of your favorite anime series and movies.</p>
+    </section>
+    
+    <section>
+      <h2>Featured Anime</h2>
+      <p class="featured">Discover the latest and greatest in the world of anime. Our featured section highlights the top picks of the season, ensuring you never miss out on the hottest releases.</p>
+      <img src="/Image/Frieren.jpg" alt="Frieren">
+      <p>Sousou No Frieren, The Best Anime Ever</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Tara Anime World. All rights reserved.</p>
+    
+  </footer>
+</body>
+</html>
