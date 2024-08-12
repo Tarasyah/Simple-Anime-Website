@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #55958e69;
+  text-align: center;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url("/Image/goku-dragon-ball-4k-wallpaper-uhdpaper.com-265@3@a.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: relative;
+  padding-top: 150px; /* Adjusted padding to make room for the animated text */
+}
+
+header h1 {
+  font-size: 2em;
+  margin-top: 60px; /* Adjusted margin to ensure spacing below the animation */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  background-color: green;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav ul li a.active {
+  color: yellow;
+}
+
+nav ul li a:hover {
+  background-color: #4c30c7;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Image Styles */
+img {
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.flex div {
+  margin-bottom: 20px;
+}
+
+.flex div img {
+  width: 100%;
+  border: 2px solid #42c58a;
+  padding: 10px;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.flex div img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+}
+
+.flex div:nth-child(odd) img {
+  border-radius: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid div img {
+  width: 40%;
+  border: 2px solid #42c58a;
+  padding: 10px;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid div img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+}
+
+.grid div:nth-child(odd) img {
+  border-radius: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: green;
+  color: white;
+  padding: 5px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+}
+
+.about,
+.featured {
+  text-align: justify;
+}
+
+main p {
+  font-weight: 200;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.sinopsis { text-align: justify;}
+
+/* Animated Header */
+#container {
+  color: #b9dfcd;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute;
+  top: 0; /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 20px;
+}
+
+#flip {
+  height: 50px;
+  overflow: hidden;
+}
+
+#flip > div > div {
+  color: #fff;
+  padding: 4px 12px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background: #42c58a;
+}
+
+#flip div:first-child div {
+  background: #4ec7f3;
+}
+
+#flip div:last-child div {
+  background: #dc143c;
+}
+
+@keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+footer p {
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+  color: #f4e4e4;
+  margin-top: 20px;
+}
