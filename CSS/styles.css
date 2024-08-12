@@ -10,7 +10,7 @@ body {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
-    url("..Image/goku-dragon-ball-4k-wallpaper-uhdpaper.com-265@3@a.jpg");
+    url("/Image/goku-dragon-ball-4k-wallpaper-uhdpaper.com-265@3@a.jpg");
   background-size: cover;
   color: white;
   text-align: center;
