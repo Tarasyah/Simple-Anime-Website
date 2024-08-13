@@ -1,0 +1,203 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;background: #085078;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #343a40;
+}
+
+a.visually-hidden-focusable {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  overflow: hidden;
+}
+
+a.visually-hidden-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 15px;
+  overflow: visible;
+  clip: auto;
+  border: 0;
+}
+
+#main-content {
+  margin-top: 20px;
+}
+
+/* Header styles */
+header {
+  height: 25rem;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(90deg, #00416a, #e4e5e6); /* Blue to light gray gradient */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 10px 0;
+  border-radius: 8px; /* Slightly rounded corners */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border from the toggler button */
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  margin-left: 20px;
+  padding: 10px 15px;
+  color: #ffffff;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(5, 15, 121, 0.384); /* Slight background highlight on hover */
+  border-radius: 5px; /* Rounded hover effect */
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #087998;
+  background-color: rgba(255, 255, 255, 0.2); /* Background highlight for active link */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.navbar-dark .navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff; /* Gold color for the brand text */
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+header #container {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+#container {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stacks items in a column */
+  perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+#flip {
+  position: relative;
+  width: 200px; /* Width of the block */
+  height: 50px; /* Height of the block */
+  transform-style: preserve-3d; /* Enable 3D transformations */
+  animation: rotateBlock 6s infinite ease-in-out;
+}
+
+#flip > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #42c58a;
+  backface-visibility: hidden; /* Hide back side during flip */
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+#flip > div:nth-child(1) {
+  background-color: #4ec7f3;
+  transform: rotateY(0deg) translateZ(100px); /* Front face */
+}
+
+#flip > div:nth-child(2) {
+  background-color: #dc143c;
+  transform: rotateY(120deg) translateZ(100px); /* Right face */
+}
+
+#flip > div:nth-child(3) {
+  background-color: #42c58a;
+  transform: rotateY(240deg) translateZ(100px); /* Left face */
+}
+
+@keyframes rotateBlock {
+  0% {
+    transform: rotateY(0deg);
+  }
+  33.33% {
+    transform: rotateY(-120deg);
+  }
+  66.66% {
+    transform: rotateY(-240deg);
+  }
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+
+/* Ensure the cards have the same height and width */
+.row.g-4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Adjusts the spacing between cards */
+}
+
+.col-md-4 {
+  flex: 1 1 calc(33.333% - 1.5rem); /* Ensure the columns are equal width */
+  display: flex;
+}
+
+.card {
+  flex: 1; /* Ensures the card takes up the full height of the column */
+  display: flex;
+  flex-direction: column; /* Stack image and body vertically */
+}
+
+.card-img-top {
+  object-fit: cover; /* Ensure the image covers the full area */
+  height: 80% !important; /* Set the height of the images */
+  width: 100%; /* Make sure the image takes up the full width of the card */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center; /* Center the card title */
+}
+
+
+/* Content styles */
+.about, .featured, .recommendations, .reviews {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Footer styles */
+footer {background: linear-gradient(320deg, #00416a, #708498); 
+  color: white;
+}
+
+/* Image styles */
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
