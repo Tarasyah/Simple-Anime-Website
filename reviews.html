@@ -1,74 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anime Reviews</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - MyAnimeList.net</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Verdana:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <a href="#main-content" class="visually-hidden-focusable">Skip to Main Content</a>
-
-   <header class="bg-dark text-white text-center p-5" style="background-image: url('Image/frieren-heiter-eisen-himmel-4k-wallpaper-uhdpaper.com-185@3@a.jpg');">
-    <div id="container">
-      Anime
-      <div id="flip">
-        <div><div>Review</div></div>
-        <div><div>Review</div></div>
-        <div><div>Review</div></div>
-      </div>
+    <div class="leaf">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark mt-5">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img width="64" height="64" src="https://img.icons8.com/color/64/tanjiro-kamado.png" alt="tanjiro-kamado"/></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="recommendations.html">Recommendations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="reviews.html">Reviews</a>
-            </li>
-          </ul>
+    <header class="mal-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">MyAnimeList</a>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-item">Anime</a>
+                <a href="recommendations.html" class="nav-item">Manga</a>
+                <a href="reviews.html" class="nav-item active" style="background-color: rgba(255, 255, 255, 0.2);">Community</a>
+            </nav>
+            <div class="header-right">
+                 <div class="search-bar">
+                    <input type="text" placeholder="Search Anime, Manga, and more...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
+    </header>
 
-  <main id="main-content" class="container my-5">
-    <section>
-      <h1 class="display-5 text-center mb-5"><strong>Sousou no Frieren</strong></h1>
-      <p class="text-center lead">Frieren: Beyond Journey's End</p>
-      <div class="text-center mb-4">
-        <img src="Image/Frieren.jpg" alt="Frieren" class="img-fluid rounded">
-      </div>
-      <h2 class="display-6 mb-3">Information</h2>
-      <ul class="list-unstyled">
-        <li><strong>Type:</strong>&nbsp;<a href="https://myanimelist.net/topanime.php?type=tv">TV</a></li>
-        <li><strong>Episodes:</strong>&nbsp;28</li>
-        <li><strong>Status:</strong>&nbsp;Finished Airing</li>
-        <li><strong>Aired:</strong>&nbsp;Sep 29, 2023 to Mar 22, 2024</li>
-        <li><strong>Premiered:</strong>&nbsp;<a href="https://myanimelist.net/anime/season/2023/fall">Fall 2023</a></li>
-        <li><strong>Studios:</strong>&nbsp;<a href="https://myanimelist.net/anime/producer/11/Madhouse">Madhouse</a></li>
-        <li><strong>Source:</strong>&nbsp;<a href="https://myanimelist.net/anime/52991/Sousou_no_Frieren#related_entries">Manga</a></li>
-        <li><strong>Genres:</strong>&nbsp;<a href="https://myanimelist.net/anime/genre/2/Adventure">Adventure</a>,&nbsp;<a href="https://myanimelist.net/anime/genre/8/Drama">Drama</a>,&nbsp;<a href="https://myanimelist.net/anime/genre/10/Fantasy">Fantasy</a></li>
-      </ul>
-      <h2 class="display-6 mt-5 mb-3">Synopsis</h2>
-      <p class="sinopsis text-justify">During their decade-long quest to defeat the Demon King, the members of the hero's party—Himmel himself, the priest Heiter, the dwarf warrior Eisen, and the elven mage Frieren—forge bonds through adventures and battles, creating unforgettable precious memories for most of them.<br><br>However, the time that Frieren spends with her comrades is equivalent to merely a fraction of her life, which has lasted over a thousand years. When the party disbands after their victory, Frieren casually returns to her "usual" routine of collecting spells across the continent. Due to her different sense of time, she seemingly holds no strong feelings toward the experiences she went through.<br><br>As the years pass, Frieren gradually realizes how her days in the hero's party truly impacted her. Witnessing the deaths of two of her former companions, Frieren begins to regret having taken their presence for granted; she vows to better understand humans and create real personal connections. Although the story of that once memorable journey has long ended, a new tale is about to begin.<br><br>[Written by MAL Rewrite]</p>
-    </section>
-  </main>
+    <div class="main-container">
+        <div class="content-wrapper">
+            <!-- Left Column: Main Content -->
+            <main class="main-content">
+                <section class="latest-reviews">
+                    <div class="section-header">
+                        <h2>Latest Anime Reviews</h2>
+                        <a href="#" class="view-more">View More</a>
+                    </div>
+                    
+                    <div class="review-item">
+                        <div class="review-image">
+                             <img src="Image/Frieren.jpg" alt="Frieren">
+                        </div>
+                        <div class="review-content">
+                            <h4><a href="#">Sousou no Frieren</a></h4>
+                            <p class="review-meta">by <a href="#">User123</a> (Recommended)</p>
+                            <p class="review-text">This anime is a masterpiece of storytelling. The pacing is deliberate and the emotional payoff is immense. Highly recommended for fans of fantasy slice-of-life.</p>
+                        </div>
+                    </div>
 
-  <footer class="bg-success text-white text-center py-3">
-    <p>&copy; 2024 Tara Anime World. All rights reserved.</p>
-  </footer>
+                    <div class="review-item">
+                        <div class="review-image">
+                             <img src="https://cdn.myanimelist.net/images/anime/1245/116760.jpg" alt="JJK">
+                        </div>
+                        <div class="review-content">
+                            <h4><a href="#">Jujutsu Kaisen 2nd Season</a></h4>
+                            <p class="review-meta">by <a href="#">AnimeFan99</a> (Mixed Feelings)</p>
+                            <p class="review-text">The animation is top tier as expected from MAPPA, but the pacing feels a bit rushed in the Shibuya Incident arc compared to the manga.</p>
+                        </div>
+                    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+                    <div class="review-item">
+                        <div class="review-image">
+                             <img src="https://cdn.myanimelist.net/images/anime/1935/127974.jpg" alt="One Piece">
+                        </div>
+                        <div class="review-content">
+                            <h4><a href="#">One Piece</a></h4>
+                            <p class="review-meta">by <a href="#">PirateKing</a> (Recommended)</p>
+                            <p class="review-text">Wano arc is finally concluding and the animation quality has been consistently movie-tier. A must watch for any shonen fan.</p>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-image">
+                             <img src="https://cdn.myanimelist.net/images/anime/1015/133460.jpg" alt="Oshi no Ko">
+                        </div>
+                        <div class="review-content">
+                            <h4><a href="#">Oshi no Ko</a></h4>
+                            <p class="review-meta">by <a href="#">IdolFan</a> (Recommended)</p>
+                            <p class="review-text">The first episode was a movie in itself. An incredible look into the dark side of the entertainment industry.</p>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-image">
+                             <img src="https://cdn.myanimelist.net/images/anime/1125/114829.jpg" alt="Vinland Saga">
+                        </div>
+                        <div class="review-content">
+                            <h4><a href="#">Vinland Saga Season 2</a></h4>
+                            <p class="review-meta">by <a href="#">VikingSpirit</a> (Masterpiece)</p>
+                            <p class="review-text">A complete shift in tone from the first season. Thorfinn's character development is one of the best in anime history. Farmland Saga is peak fiction.</p>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-image">
+                             <img src="https://cdn.myanimelist.net/images/anime/1806/126216.jpg" alt="Chainsaw Man">
+                        </div>
+                        <div class="review-content">
+                            <h4><a href="#">Chainsaw Man</a></h4>
+                            <p class="review-meta">by <a href="#">PochitaLover</a> (Recommended)</p>
+                            <p class="review-text">Crazy visuals and a chaotic story. Denji is a relatable protagonist in the weirdest way possible. Mappa went all out on the animation.</p>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-image">
+                             <img src="https://cdn.myanimelist.net/images/anime/1258/126929.jpg" alt="Blue Lock">
+                        </div>
+                        <div class="review-content">
+                            <h4><a href="#">Blue Lock</a></h4>
+                            <p class="review-meta">by <a href="#">StrikerNo1</a> (Mixed Feelings)</p>
+                            <p class="review-text">The hype moments are incredible, but the CGI can be distracting at times. Still, it's the most exciting sports anime in years.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="recent-activity mt-5">
+                    <div class="section-header">
+                        <h2>Recent Activity</h2>
+                    </div>
+                    <div class="activity-feed">
+                        <div class="activity-item">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" class="user-avatar" alt="User">
+                            <div class="activity-text">
+                                <strong>OtakuKing</strong> watched episode 5 of <a href="#">Spy x Family Season 2</a>
+                            </div>
+                            <span class="time">2 mins ago</span>
+                        </div>
+                        <div class="activity-item">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aneka" class="user-avatar" alt="User">
+                            <div class="activity-text">
+                                <strong>AnimeGirl99</strong> completed <a href="#">Dr. Stone: New World</a>
+                            </div>
+                            <span class="time">15 mins ago</span>
+                        </div>
+                        <div class="activity-item">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Bob" class="user-avatar" alt="User">
+                            <div class="activity-text">
+                                <strong>ZenitsuFan</strong> dropped <a href="#">Boruto: Naruto Next Generations</a>
+                            </div>
+                            <span class="time">42 mins ago</span>
+                        </div>
+                        <div class="activity-item">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Jack" class="user-avatar" alt="User">
+                            <div class="activity-text">
+                                <strong>LuffySenpai</strong> plans to watch <a href="#">One Piece Film: Red</a>
+                            </div>
+                            <span class="time">1 hour ago</span>
+                        </div>
+                         <div class="activity-item">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Mila" class="user-avatar" alt="User">
+                            <div class="activity-text">
+                                <strong>MangaReader</strong> read chapter 1095 of <a href="#">One Piece</a>
+                            </div>
+                            <span class="time">2 hours ago</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="forum-discussions mt-5">
+                    <div class="section-header">
+                        <h2>Recent Forum Discussions</h2>
+                        <a href="#" class="view-more">View More</a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="#" style="color: #2e7d32; font-weight: bold;">What is your anime of the year 2024?</a>
+                            <span class="badge bg-success rounded-pill">142 replies</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="#" style="color: #2e7d32; font-weight: bold;">Jujutsu Kaisen Chapter 245 Discussion</a>
+                            <span class="badge bg-success rounded-pill">89 replies</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="#" style="color: #2e7d32; font-weight: bold;">Recommendation for chill slice of life anime?</a>
+                            <span class="badge bg-success rounded-pill">23 replies</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="#" style="color: #2e7d32; font-weight: bold;">Is One Piece worth starting now?</a>
+                            <span class="badge bg-success rounded-pill">567 replies</span>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+
+            <!-- Right Column: Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>Top Reviewers</h3>
+                    <ul class="ranking-list">
+                        <li>
+                            <span class="rank">1</span>
+                            <div class="rank-info">
+                                <a href="#">ReviewerKing</a>
+                                <span class="score">500 Reviews</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank">2</span>
+                            <div class="rank-info">
+                                <a href="#">AnimeCritic</a>
+                                <span class="score">450 Reviews</span>
+                            </div>
+                        </li>
+                         <li>
+                            <span class="rank">3</span>
+                            <div class="rank-info">
+                                <a href="#">MangaReader</a>
+                                <span class="score">320 Reviews</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="mal-footer">
+        <div class="footer-content">
+            <p>MyAnimeList.net is a property of MyAnimeList Co.,Ltd. ©2023 All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Support</a>
+                <a href="#">Advertising</a>
+                <a href="#">FAQ</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

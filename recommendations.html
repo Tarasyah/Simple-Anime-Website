@@ -1,87 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anime Recommendations</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Recommendations - MyAnimeList.net</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Verdana:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <a href="#main-content" class="visually-hidden-focusable">Skip to Main Content</a>
-
-  <header class="bg-dark text-white text-center p-5" style="background-image: url('Image/frieren-heiter-eisen-himmel-4k-wallpaper-uhdpaper.com-185@3@a.jpg');">
-    <div id="container">
-      Anime
-      <div id="flip">
-        <div><div>advice</div></div>
-        <div><div>advice</div></div>
-        <div><div>advice</div></div>
-      </div>
+    <div class="leaf">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark mt-5">
-      <div class="container">
-            <a class="navbar-brand" href="#"><img width="64" height="64" src="https://img.icons8.com/dusk/64/son-goku.png" alt="son-goku"/></a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="recommendations.html">Recommendations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="reviews.html">Reviews</a>
-            </li>
-          </ul>
+    <header class="mal-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">MyAnimeList</a>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-item">Anime</a>
+                <a href="recommendations.html" class="nav-item active" style="background-color: rgba(255, 255, 255, 0.2);">Manga</a>
+                <a href="reviews.html" class="nav-item">Community</a>
+            </nav>
+            <div class="header-right">
+                 <div class="search-bar">
+                    <input type="text" placeholder="Search Anime, Manga, and more...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
+    </header>
 
-  <main id="main-content" class="container my-5">
-    <section class="mb-5">
-      <h2 class="display-6 text-center mb-4">Recommended Anime</h2>
-      <p class="recommendations text-justify">Check out our handpicked recommendations of anime series that you must watch. Whether you're looking for action, romance, or slice of life, we've got something for everyone.</p>
-    </section>
-    
-    <section class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="Image/Clannad After Story.jpg" class="card-img-top img-fluid rounded" alt="Clannad After Story">
-          <div class="card-body">
-            <h5 class="card-title">Clannad After Story</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="Image/Koe no Katachi.jpg" class="card-img-top img-fluid rounded" alt="Koe no Katachi">
-          <div class="card-body">
-            <h5 class="card-title">Koe no Katachi</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="Image/Violet Evergarden.jpg" class="card-img-top img-fluid rounded" alt="Violet Evergarden">
-          <div class="card-body">
-            <h5 class="card-title">Violet Evergarden</h5>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+    <div class="main-container">
+        <div class="content-wrapper">
+            <!-- Left Column: Main Content -->
+            <main class="main-content">
+                <section class="seasonal-anime">
+                    <div class="section-header">
+                        <h2>Top Manga Recommendations</h2>
+                    </div>
+                    <p class="mb-3" style="font-size: 11px;">Discover the highest-rated and most popular manga series.</p>
+                    
+                    <div class="anime-grid">
+                        <div class="anime-card">
+                            <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/manga/1/157897.jpg" alt="Berserk">
+                                <span class="type">Manga</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Berserk</a></h3>
+                        </div>
+                        <div class="anime-card">
+                            <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/manga/1/259070.jpg" alt="Vagabond">
+                                <span class="type">Manga</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Vagabond</a></h3>
+                        </div>
+                        <div class="anime-card">
+                            <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/manga/3/80661.jpg" alt="One Punch Man">
+                                <span class="type">Manga</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">One Punch Man</a></h3>
+                        </div>
+                        <div class="anime-card">
+                            <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/manga/2/171813.jpg" alt="Monster">
+                                <span class="type">Manga</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Monster</a></h3>
+                        </div>
+                        <div class="anime-card">
+                            <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/manga/2/253146.jpg" alt="Oyasumi Punpun">
+                                <span class="type">Manga</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Oyasumi Punpun</a></h3>
+                        </div>
+                        <div class="anime-card">
+                            <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/manga/3/179779.jpg" alt="20th Century Boys">
+                                <span class="type">Manga</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">20th Century Boys</a></h3>
+                        </div>
+                         <div class="anime-card">
+                            <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/manga/2/188304.jpg" alt="Vinland Saga">
+                                <span class="type">Manga</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Vinland Saga</a></h3>
+                        </div>
+                         <div class="anime-card">
+                            <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/manga/2/166124.jpg" alt="Grand Blue">
+                                <span class="type">Manga</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Grand Blue</a></h3>
+                        </div>
+                        <div class="anime-card">
+                            <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/manga/3/266834.jpg" alt="Chainsaw Man">
+                                <span class="type">Manga</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Chainsaw Man</a></h3>
+                        </div>
+                         <div class="anime-card">
+                            <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/manga/3/55539.jpg" alt="Fullmetal Alchemist">
+                                <span class="type">Manga</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Fullmetal Alchemist</a></h3>
+                        </div>
+                         <div class="anime-card">
+                            <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/manga/2/253146.jpg" alt="Goodnight Punpun">
+                                <span class="type">Manga</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Goodnight Punpun</a></h3>
+                        </div>
+                         <div class="anime-card">
+                            <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/manga/3/179779.jpg" alt="20th Century Boys">
+                                <span class="type">Manga</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">20th Century Boys</a></h3>
+                        </div>
+                    </div>
+                </section>
+            </main>
 
-  <footer class="bg-success text-white text-center py-3">
-    <p>&copy; 2024 Tara Anime World. All rights reserved.</p>
-  </footer>
+            <!-- Right Column: Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>Top Manga</h3>
+                    <ul class="ranking-list">
+                        <li>
+                            <span class="rank">1</span>
+                            <img src="https://cdn.myanimelist.net/images/manga/1/157897.jpg" alt="Berserk">
+                            <div class="rank-info">
+                                <a href="#">Berserk</a>
+                                <span class="score">9.47</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank">2</span>
+                            <img src="https://cdn.myanimelist.net/images/manga/2/253146.jpg" alt="Punpun">
+                            <div class="rank-info">
+                                <a href="#">Oyasumi Punpun</a>
+                                <span class="score">9.02</span>
+                            </div>
+                        </li>
+                         <li>
+                            <span class="rank">3</span>
+                            <img src="https://cdn.myanimelist.net/images/manga/1/259070.jpg" alt="Vagabond">
+                            <div class="rank-info">
+                                <a href="#">Vagabond</a>
+                                <span class="score">9.24</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank">4</span>
+                            <img src="https://cdn.myanimelist.net/images/manga/3/80661.jpg" alt="One Punch Man">
+                            <div class="rank-info">
+                                <a href="#">One Punch Man</a>
+                                <span class="score">8.75</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank">5</span>
+                            <img src="https://cdn.myanimelist.net/images/manga/2/171813.jpg" alt="Monster">
+                            <div class="rank-info">
+                                <a href="#">Monster</a>
+                                <span class="score">9.15</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="mal-footer">
+        <div class="footer-content">
+            <p>MyAnimeList.net is a property of MyAnimeList Co.,Ltd. ©2023 All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Support</a>
+                <a href="#">Advertising</a>
+                <a href="#">FAQ</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

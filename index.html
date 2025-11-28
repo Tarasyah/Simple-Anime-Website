@@ -1,69 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anime Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAnimeList - Anime and Manga Database and Community</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Verdana:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <a href="#main-content" class="visually-hidden-focusable">Skip to Main Content</a>
-
-  <header class="bg-dark text-white text-center p-5" style="background-image: url('Image/frieren-heiter-eisen-himmel-4k-wallpaper-uhdpaper.com-185@3@a.jpg');">
-    <div id="container">
-      Anime
-      <div id="flip">
-        <div><div>Fun</div></div>
-        <div><div>Silly</div></div>
-        <div><div>Cool</div></div>
-      </div>
+    <div class="leaf">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark mt-5">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img width="56" height="56" src="https://img.icons8.com/color/48/monkey-d-luffy.png" alt="monkey-d-luffy"/></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="recommendations.html">Recommendations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="reviews.html">Reviews</a>
-            </li>
-          </ul>
+    <header class="mal-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">MyAnimeList</a>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-item">Anime</a>
+                <a href="recommendations.html" class="nav-item">Manga</a>
+                <a href="reviews.html" class="nav-item">Community</a>
+            </nav>
+            <div class="header-right">
+                 <div class="search-bar">
+                    <input type="text" placeholder="Search Anime, Manga, and more...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
+    </header>
 
-  <main id="main-content" class="container my-5">
-    <section class="mb-5">
-      <h2 id="hei" class="display-6 text-center mb-4">About Us</h2>
-      <p class="about text-justify">Welcome to Anime World, the ultimate destination for anime enthusiasts. Whether you are a seasoned fan or just starting your journey, our site offers comprehensive reviews, top recommendations, and detailed analyses of your favorite anime series and movies.</p>
-    </section>
-    
-    <section>
-      <h2 class="display-6 text-center mb-4">Featured Anime</h2>
-      <p class="featured text-justify">Discover the latest and greatest in the world of anime. Our featured section highlights the top picks of the season, ensuring you never miss out on the hottest releases.</p>
-      <div class="text-center">
-        <img src="Image/Frieren.jpg" alt="Frieren" class="img-fluid rounded">
-        <p class="mt-3">Sousou No Frieren, The Best Anime Ever</p>
-      </div>
-    </section>
-  </main>
+    <div class="main-container">
+        <div class="content-wrapper">
+            <!-- Left Column: Main Content -->
+            <main class="main-content">
+                <section class="seasonal-anime">
+                    <div class="section-header">
+                        <h2>Fall 2024 Anime</h2>
+                        <a href="#" class="view-more">View More</a>
+                    </div>
+                    <div class="anime-grid">
+                        <!-- Anime Card 1 -->
+                        <div class="anime-card">
+                            <div class="image-wrapper">
+                                <img src="Image/Frieren.jpg" alt="Frieren">
+                                <span class="type">TV</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Sousou no Frieren</a></h3>
+                        </div>
+                        <!-- Additional Cards -->
+                        <div class="anime-card">
+                             <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/anime/1245/116760.jpg" alt="Jujutsu Kaisen">
+                                <span class="type">TV</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Jujutsu Kaisen 2nd Season</a></h3>
+                        </div>
+                         <div class="anime-card">
+                             <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/anime/1015/138006.jpg" alt="Spy x Family">
+                                <span class="type">TV</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Spy x Family Season 2</a></h3>
+                        </div>
+                         <div class="anime-card">
+                             <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/anime/1935/127974.jpg" alt="One Piece">
+                                <span class="type">TV</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">One Piece</a></h3>
+                        </div>
+                        <div class="anime-card">
+                             <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/anime/1100/138338.jpg" alt="Dr. Stone">
+                                <span class="type">TV</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Dr. Stone: New World Part 2</a></h3>
+                        </div>
+                         <div class="anime-card">
+                             <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/anime/1765/135099.jpg" alt="Eminence in Shadow">
+                                <span class="type">TV</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">The Eminence in Shadow 2nd Season</a></h3>
+                        </div>
+                         <div class="anime-card">
+                             <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/anime/1483/136660.jpg" alt="Tokyo Revengers">
+                                <span class="type">TV</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Tokyo Revengers: Tenjiku-hen</a></h3>
+                        </div>
+                         <div class="anime-card">
+                             <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/anime/1506/138982.jpg" alt="Undead Unluck">
+                                <span class="type">TV</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Undead Unluck</a></h3>
+                        </div>
+                        <div class="anime-card">
+                             <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/anime/1286/123000.jpg" alt="Demon Slayer">
+                                <span class="type">TV</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Kimetsu no Yaiba: Swordsmith Village Arc</a></h3>
+                        </div>
+                        <div class="anime-card">
+                             <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/anime/1806/126216.jpg" alt="Chainsaw Man">
+                                <span class="type">TV</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Chainsaw Man</a></h3>
+                        </div>
+                        <div class="anime-card">
+                             <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/anime/1015/133460.jpg" alt="Oshi no Ko">
+                                <span class="type">TV</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Oshi no Ko</a></h3>
+                        </div>
+                        <div class="anime-card">
+                             <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/anime/1258/126929.jpg" alt="Blue Lock">
+                                <span class="type">TV</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Blue Lock</a></h3>
+                        </div>
+                        <div class="anime-card">
+                             <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/anime/1125/114829.jpg" alt="Vinland Saga">
+                                <span class="type">TV</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Vinland Saga Season 2</a></h3>
+                        </div>
+                        <div class="anime-card">
+                             <div class="image-wrapper">
+                                <img src="https://cdn.myanimelist.net/images/anime/1000/110531.jpg" alt="Mushoku Tensei">
+                                <span class="type">TV</span>
+                            </div>
+                            <h3 class="anime-title"><a href="#">Mushoku Tensei: Jobless Reincarnation</a></h3>
+                        </div>
+                    </div>
+                </section>
 
-  <footer class="bg-success text-white text-center py-3">
-    <p>&copy; 2024 Tara Anime World. All rights reserved.</p>
-  </footer>
+                <section class="latest-reviews mt-4">
+                    <div class="section-header">
+                        <h2>Latest Reviews</h2>
+                        <a href="reviews.html" class="view-more">View More</a>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-image">
+                             <img src="Image/Frieren.jpg" alt="Frieren">
+                        </div>
+                        <div class="review-content">
+                            <h4><a href="#">Sousou no Frieren</a></h4>
+                            <p class="review-meta">by <a href="#">User123</a> (Recommended)</p>
+                            <p class="review-text">This anime is a masterpiece of storytelling. The pacing is deliberate and the emotional payoff is immense. Highly recommended for fans of fantasy slice-of-life.</p>
+                        </div>
+                    </div>
+                    <div class="review-item mt-3">
+                        <div class="review-image">
+                             <img src="https://cdn.myanimelist.net/images/anime/1245/116760.jpg" alt="JJK">
+                        </div>
+                        <div class="review-content">
+                            <h4><a href="#">Jujutsu Kaisen 2nd Season</a></h4>
+                            <p class="review-meta">by <a href="#">AnimeFan99</a> (Mixed Feelings)</p>
+                            <p class="review-text">The animation is top tier as expected from MAPPA, but the pacing feels a bit rushed in the Shibuya Incident arc compared to the manga.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+            <!-- Right Column: Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>Top Airing Anime</h3>
+                    <ul class="ranking-list">
+                        <li>
+                            <span class="rank">1</span>
+                            <img src="Image/Frieren.jpg" alt="Frieren">
+                            <div class="rank-info">
+                                <a href="#">Sousou no Frieren</a>
+                                <span class="score">9.14</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank">2</span>
+                            <img src="https://cdn.myanimelist.net/images/anime/1245/116760.jpg" alt="JJK">
+                            <div class="rank-info">
+                                <a href="#">Jujutsu Kaisen 2nd Season</a>
+                                <span class="score">8.89</span>
+                            </div>
+                        </li>
+                         <li>
+                            <span class="rank">3</span>
+                            <img src="https://cdn.myanimelist.net/images/anime/1935/127974.jpg" alt="One Piece">
+                            <div class="rank-info">
+                                <a href="#">One Piece</a>
+                                <span class="score">8.69</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank">4</span>
+                            <img src="https://cdn.myanimelist.net/images/anime/1015/138006.jpg" alt="Spy x Family">
+                            <div class="rank-info">
+                                <a href="#">Spy x Family Season 2</a>
+                                <span class="score">8.55</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank">5</span>
+                            <img src="https://cdn.myanimelist.net/images/anime/1765/135099.jpg" alt="Eminence">
+                            <div class="rank-info">
+                                <a href="#">The Eminence in Shadow 2nd Season</a>
+                                <span class="score">8.42</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-section mt-4">
+                    <h3>Most Popular</h3>
+                    <ul class="ranking-list">
+                        <li>
+                            <span class="rank">1</span>
+                            <img src="https://cdn.myanimelist.net/images/anime/13/17405.jpg" alt="Attack on Titan">
+                            <div class="rank-info">
+                                <a href="#">Shingeki no Kyojin</a>
+                                <span class="score">Members: 3.8M</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank">2</span>
+                            <img src="https://cdn.myanimelist.net/images/anime/1223/96541.jpg" alt="Death Note">
+                            <div class="rank-info">
+                                <a href="#">Death Note</a>
+                                <span class="score">Members: 3.7M</span>
+                            </div>
+                        </li>
+                         <li>
+                            <span class="rank">3</span>
+                            <img src="https://cdn.myanimelist.net/images/anime/1171/109192.jpg" alt="FMAB">
+                            <div class="rank-info">
+                                <a href="#">Fullmetal Alchemist: Brotherhood</a>
+                                <span class="score">Members: 3.1M</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="mal-footer">
+        <div class="footer-content">
+            <p>MyAnimeList.net is a property of MyAnimeList Co.,Ltd. ©2023 All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Support</a>
+                <a href="#">Advertising</a>
+                <a href="#">FAQ</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
